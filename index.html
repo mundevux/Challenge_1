@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprint 01: Encriptador de Texto</title>
+    <link rel="shortcut icon" href="./src/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./dist/output.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+</head>
+<body class="bg-[#F3F5FC]">
+    <section class="container mx-auto h-screen">
+        <div class="fixed w-full z-20 top-0 left-0">
+            <img src="./src/img/Logo.png" alt="Logo Alura">
+        </div>
+        <div class="grid grid-cols-3 gap-5 px-12 py-6 border h-full">
+            <div class="col-span-2 pt-8">
+                <textarea type="text" class="w-full h-auto bg-[#F3F5FC] text-[#0A3871] focus:outline-none" placeholder="Ingrese el texto aquí"></textarea>
+                <div class="flex mt-1 mb-3">
+                    <iconify-icon icon="bi:exclamation-circle-fill"></iconify-icon>
+                    <p class="text-xs ml-1">Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="flex justify-center">
+                    <button class="bg-[#0A3871] text-white rounded-3xl w-full py-3 mx-6">Encriptar</button>
+                    <button class=" text-[#0A3871] bg-[#E9ECF8] border-[#0A3871] border-2 rounded-3xl w-full py-3 mx-6">Desencriptar</button>
+                </div>
+            </div>
+            <div class="bg-white shadow-xl rounded-3xl flex flex-col justify-center items-center">
+                <img src="./src/img/Muñeco.png" alt="Imagen de Busqueda">
+                <h1>Ningún mensaje fue encriptado</h1>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+        </div>
+        <div>
+
+        </div>  
+    </section> 
+    <script src="./src/index.js"></script> 
+</body>
+</html>
